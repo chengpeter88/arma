@@ -101,13 +101,9 @@ arma.save(file_name="arma_data.csv")
 圖形展示的功能需要將圖形保存在您的 GitHub 倉庫中的某個位置，然後使用相對路徑或絕對路徑來引用它。以下是一個圖片的 Markdown 引用示例：
 
 ```markdown
-![ARMA Model Data Plot](https://github.com/chengpeter88/arma/blob/master/arma_demo.png)
+![ARMA Model Data Plot](https://github.com/chengpeter88/arma/raw/master/arma_demo.png)
+
 ```
 
-請將 `/path/to/your/image.png` 替換為您圖片的實際路徑。
 
-注意：Markdown 文件中的 LaTeX 數學公式可能不會在所有平台上正確渲染，這取決於該平台對 LaTeX 的支持程度。
-```
-
-請將這個範本內容替換為您的 `README.md` 文件內容，並根據需要進行適當的調整。特別注意圖片路徑應該指向實際的圖片位置，並且確認您的 GitHub 倉庫結
 
