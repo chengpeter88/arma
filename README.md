@@ -101,6 +101,13 @@ $$
 
 進一步關於數學模型的詳細資訊，請參見[ARMA模型維基百科頁面](https://zh.wikipedia.org/zh-tw/ARMA%E6%A8%A1%E5%9E%8B)。
 
+其中針對屬性定義：
+
+	•	p , q 為AR 與 MA 模型的階層數（order）
+	•	phi 為建構p階層，所設立的係數。
+ 	•	theta 為建構q階層，所設立的係數
+	•	c, mu 屬性為透過常態分配抽樣建立隨機誤差項N(c,,mu^2)，其中c為平均數，mu為標準差
+
 ### AR 模型
 
 ```python
