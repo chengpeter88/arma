@@ -100,10 +100,10 @@ arma.save(file_name="arma_data.csv")
 
 圖形展示的功能需要將圖形保存在您的 GitHub 倉庫中的某個位置，然後使用相對路徑或絕對路徑來引用它。以下是一個圖片的 Markdown 引用示例：
 
-```markdown
+
 ![ARMA Model Data Plot](https://github.com/chengpeter88/arma/raw/master/arma_demo.png)
 
-```
+
 
 
 
