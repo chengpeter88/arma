@@ -1,0 +1,8 @@
+setup.py
+arma/__init__.py
+arma/arma.py
+arma_model.egg-info/PKG-INFO
+arma_model.egg-info/SOURCES.txt
+arma_model.egg-info/dependency_links.txt
+arma_model.egg-info/requires.txt
+arma_model.egg-info/top_level.txt
