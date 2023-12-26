@@ -40,7 +40,7 @@ X_{t} = c + \epsilon_{t} + \sum_{i=1}^{p} \phi_{i} X_{t-i} + \sum_{j=1}^{q} \the
 $$
 
 
-可參考網址有更詳細的數學說明：https://zh.wikipedia.org/zh-tw/ARMA%E6%A8%A1%E5%9E%8B
+可參考網址詳細數學模型建構：https://zh.wikipedia.org/zh-tw/ARMA%E6%A8%A1%E5%9E%8B
 
 
 
