@@ -21,3 +21,4 @@ from arma import AR
 ```
 ARMA(p=1, q=1,phi=[0.5],theta=[0.5],c=1.0,mu=0.0,sigma=1.0)
 ```
+$$  X_{t} = c + \epsilon $$
