@@ -25,6 +25,6 @@ ARMA(p=1, q=1,phi=[0.5],theta=[0.5],c=1.0,mu=0.0,sigma=1.0)
 $$
 X_{t} = c + \epsilon_{t} + \sum_{i=1}^{p} \phi_{i} X_{t-i} + \sum_{j=1}^{q} \theta_{j} \epsilon_{t-j}
 $$
-\
+--------
 其中數學參數定義如下架設
 -  其中：c是常數項、$\varepsilon _{t}$被假設為平均數等於0，標準差等於 \sigma 的隨機誤差值；\varepsilon _{t}被假設為對於任何的t都不變。
