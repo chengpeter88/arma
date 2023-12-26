@@ -43,6 +43,7 @@ $$
 可參考網址有更詳細的數學說明：https://zh.wikipedia.org/zh-tw/ARMA%E6%A8%A1%E5%9E%8B
 
 
+
 其中針對屬性定義：
 
 	•	p , q 為AR 與 MA 模型的階層數（order）
