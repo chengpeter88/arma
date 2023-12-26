@@ -44,7 +44,7 @@ $$
 	•	p , q 為AR 與 MA 模型的階層數（order）
 	•	phi 為建構p階層，所設立的係數。
  	•	theta 為建構q階層，所設立的係數
-	•	c, mu 屬性為透過常態分配抽樣建立隨機誤差項  N(c,,mu^2) : 其中c為平均數 、 mu為標準差
+	•	c, mu 屬性為透過常態分配抽樣建立隨機誤差項  N(c, mu^2) : 其中c為平均數 、 mu為標準差
 
 ### AR 模型
 
@@ -66,7 +66,7 @@ ma = MA(q=1, theta=[0.5], mu=0.0, sigma=1.0)
 
 ---
 
-## Instance Methods
+## 實體方法（Instance Methods）
 
 ### 生成資料
 
