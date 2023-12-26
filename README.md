@@ -9,4 +9,9 @@ pip install git+https://github.com/chengpeter88/arma@v1.0.0
 pip uninstall arma
 ```
 -----
-handbook 
+handbook 套件使用方式
+```
+from arma import ARMA
+from arma import MA
+from arma import AR 
+```
