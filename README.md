@@ -1,4 +1,4 @@
-# <font=yellow>ARMA ,AR , MA process <font>
+# <span style="color:yellow">ARMA, AR, MA process</span>
 ## install 下載套件方式
 --------
 ```
