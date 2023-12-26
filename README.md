@@ -26,3 +26,5 @@ $$
 X_{t} = c + \epsilon_{t} + \sum_{i=1}^{p} \phi_{i} X_{t-i} + \sum_{j=1}^{q} \theta_{j} \epsilon_{t-j}
 $$
 
+其中數學參數定義如下架設
+-  
