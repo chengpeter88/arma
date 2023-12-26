@@ -60,6 +60,8 @@ arma.simulate(n=100)
 
 ### 畫圖自動產生成資料圖形（ggplot）
 arma.plot()
+![image](https://github.com/chengpeter88/arma/assets/108580387/141b031a-ed1a-4dee-a7ed-714bbf7dc8c9)
+
 
 ###統計量
 arma_model.statistics()
