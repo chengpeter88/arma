@@ -1,4 +1,4 @@
-# ARMA, AR, MA 過程
+# ARMA, AR, MA 模型
 
 此套件包含三種計量經濟學中常見的時間序列模型，作為類別變數提供。
 
@@ -38,10 +38,11 @@ ARMA 模型的數學表示如下：
 $$
 X_{t} = c + \epsilon_{t} + \sum_{i=1}^{p} \phi_{i} X_{t-i} + \sum_{j=1}^{q} \theta_{j} \epsilon_{t-j}
 $$
+可參考網址有更詳細的數學說明：https://zh.wikipedia.org/zh-tw/ARMA%E6%A8%A1%E5%9E%8B
+其中針對屬性定義：
 
-其中：
-
-	•	c 是常數項
-	•	\epsilon_{t} 假設為平均數為 0 且標準差為 \sigma 的隨機誤差
-	•	對於任何 t，\epsilon_{t} 被假設為恆定不變。
+	•	p , q 為AR 與 MA 模型的階層數（order）
+	•	phi 為建構p階層，所設立的係數。
+ 	•	theta 為建構q階層，所設立的係數
+	•	c, mu 屬性為透過常態分配抽樣建立隨機誤差項N(c,,mu^2)，其中c為平均數，mu為標準差
 
