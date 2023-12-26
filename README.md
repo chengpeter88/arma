@@ -97,7 +97,7 @@ arma.save(file_name="arma_data.csv")
 ```
 
 ### 圖形plot()
-以下展示為透過arma.plot() 實體後可以獲取的圖片：
+以下展示為透過`arma.plot()` 實體後可以獲取的圖片：
 
 
 ![ARMA Model Data Plot](https://github.com/chengpeter88/arma/raw/master/arma_demo.png)
