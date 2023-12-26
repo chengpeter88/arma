@@ -21,4 +21,5 @@ from arma import AR
 ```
 ARMA(p=1, q=1,phi=[0.5],theta=[0.5],c=1.0,mu=0.0,sigma=1.0)
 ```
-$$  X_{t} = c + \epsilon $$
+Genearl form  
+$$  X_{t} = c + \epsilon_{t} + \sum_{i=1}^{p} \phi_{i} X_{t-i}+ \sum_{j=1}^{q} \theta_{j} \epsilon_{t-j} $$
