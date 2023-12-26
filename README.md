@@ -31,7 +31,7 @@ ARMA 模型
 
 要創建一個 ARMA 模型實例，請如下初始化：
 
-ARMA(p=1, q=1, phi=[0.5], theta=[0.5], c=1.0, mu=0.0, sigma=1.0)
+arma=ARMA(p=1, q=1, phi=[0.5], theta=[0.5], c=1.0, mu=0.0, sigma=1.0)
 ```
 ARMA 模型的數學表示如下：
 
@@ -55,7 +55,21 @@ $$
  ## ARMA 模型instace method
 
 ```python
+### ARMA模型生成資料長度 n = int
+arma.simulate(n=100)
 
+### 畫圖自動產生成資料圖形（ggplot）
+arma.plot()
+
+###統計量
+arma_model.statistics()
+### 打印出序列平均數與變異數 'Mean: 2.0000, Variance: 1.7500'
+
+
+### 生成序列進行本地存擋file支援（csv, txt, xlsx）
+arma.save(file_name = "your_file_name.xlsx")
+arma.save(file_name = "your_file_name.csv")
+arma.save(file_name = "your_file_name.txt")
 
 
 ```
