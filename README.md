@@ -109,6 +109,7 @@ arma.save(file_name="*.xlsx")
 ![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/retun_file.png)
 
 
-
+- Notice : 使用`AR` `MA` 可使用相同的instance  method 進行  
+-----
 
 
