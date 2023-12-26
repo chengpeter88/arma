@@ -98,7 +98,7 @@ arma.save(file_name="*.txt")
 arma.save(file_name="*.xlsx")
 ```
 
-### 圖形plot()
+### 展示圖片
 以下展示為透過`arma.plot()` 實體後可以獲取的圖片：
 
 ![ARMA Model Data Plot](https://github.com/chengpeter88/arma/raw/master/arma_demo.png)
