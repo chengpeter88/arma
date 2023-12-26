@@ -77,35 +77,6 @@ arma.save(file_name = "your_file_name.txt")
 ```
 -----------------------------
 
-當然可以，以下是一個完整的 Markdown 文件範例，做了一些調整來改善格式和清晰度：
-
-```markdown
-# ARMA, AR, MA 模型
-
-此套件包含三種計量經濟學中常見的時間序列模型：ARMA, AR, 和 MA，作為類別變數提供。
-
-## 安裝方法
-
-要安裝此套件，請在命令行運行以下命令：
-
-```bash
-pip install git+https://github.com/chengpeter88/arma@v1.0.3
-```
-
-## 解除安裝方法
-
-要解除安裝此套件，請運行：
-
-```bash
-pip uninstall arma
-```
-
----
-
-
-
-
-
 
 
 
