@@ -104,6 +104,8 @@ arma.save(file_name="*.xlsx")
 
 ![ARMA Model Data Plot](https://github.com/chengpeter88/arma/raw/master/arma_demo.png)
 
+![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/retun_file.png)
+
 
 
 
