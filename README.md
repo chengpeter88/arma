@@ -92,8 +92,10 @@ arma_statistics = arma.statistics()
 ### 保存數據
 
 ```python
-# 將 ARMA 模型數據保存為 CSV 文件
-arma.save(file_name="arma_data.csv")
+# 將 ARMA 模型可供選則保存為 CSV 、 txt 、xlsx  文件
+arma.save(file_name="*.csv")
+arma.save(file_name="*.txt")
+arma.save(file_name="*.xlsx")
 ```
 
 ### 圖形plot()
