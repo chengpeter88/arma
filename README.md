@@ -109,7 +109,9 @@ arma.save(file_name="*.xlsx")
 ![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/retun_file.png)
 
 
-- Notice : 使用`AR` `MA` 可使用相同的instance  method 進行  
+- Notice : 使用`AR` `MA` 子類繼承於父類`ARMA`因此可使用相同的instance  method   
 -----
-
+## Goal
+- 計量經濟學中時間序列議題，透過OOP設計`ARMA`、`MA`、`AR` 模型，可輔助驗證計量理論
+- 人工資料生成，可用於現今資料科學中模型評估資料選擇，建構`ARMA` `AR` `MA`時間序列特性資料
 
