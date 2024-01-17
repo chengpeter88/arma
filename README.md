@@ -101,6 +101,7 @@ arma.save(file_name="*.xlsx")
 ```python
 # 使用者可以填入落後項，必須為整數
 arma.covariance(int)
+arma.covariance(2)
 ```
 
 ### 展示圖片
