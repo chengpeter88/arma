@@ -117,7 +117,7 @@ arma.covariance(2)
 
 以下展示為透過`arma.covariance(3)` 實體後可以獲取return：
 
-![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/arma.cov.png)
+![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/arma_cov.png)
 
 
 - Notice : 使用`AR` `MA` 子類繼承於父類`ARMA`因此可使用相同的instance  method   
