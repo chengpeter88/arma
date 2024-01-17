@@ -6,7 +6,7 @@
 
 要安裝套件，請運行以下命令：
 ```
-pip install git+https://github.com/chengpeter88/arma@v1.0.2
+pip install git+https://github.com/chengpeter88/arma@v1.0.3
 ```
 
 ## 解除安裝方法
