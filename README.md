@@ -115,6 +115,11 @@ arma.covariance(2)
 ![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/retun_file.png)
 
 
+以下展示為透過`arma.covariance(3)` 實體後可以獲取return：
+
+![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/arma.cov.png)
+
+
 - Notice : 使用`AR` `MA` 子類繼承於父類`ARMA`因此可使用相同的instance  method   
 -----
 ## Goal
