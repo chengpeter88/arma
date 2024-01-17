@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='arma',
-    version='1.0.2',
+    version='1.0.3',
     description=' ARMA, AR amd MA model process',
     author='Peter_Cheng',
     packages=find_packages(),

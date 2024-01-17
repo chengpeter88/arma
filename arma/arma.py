@@ -4,6 +4,19 @@ import matplotlib.pyplot as plt
 
 class ARMA:
     def __init__(self, p:int, q:int, phi:list, theta:list, c:float, mu:float, sigma:float):
+        '''
+        p: AR 的階次
+        q: MA 的階次
+        phi: AR 的係數
+        theta: MA 的係數
+        c: 常數項
+        --------------------
+        常態分佈的進行抽樣生成隨機誤差  N(mu, sigma)
+        mu: 隨機誤差的平均值
+        sigma: 隨機誤差的標準差
+        ex: ARMA(1, 1, [0.5], [0.5], 0, 0, 1)   
+        # ARMA(1, 1) process 係數設定 phi=0.5, theta=0.5, c=0, mu=0, sigma=1
+        '''
         if not isinstance(p, int) or not isinstance(q, int):
             raise ValueError("p and q must be integers")
         if len(phi) != p:
@@ -32,8 +45,12 @@ class ARMA:
     def save(self, file_name):
         return self._save(file_name)
     
+    def covariance(self,max_lag):
+        return self._covariance(max_lag)
 
-    
+
+
+
     ##priveate function 
     def _simulate(self, num_samples):
         X = np.zeros(num_samples)
@@ -76,31 +93,100 @@ class ARMA:
             raise ValueError("file_name must end with .xlsx or .txt or .csv")
         return f"File saved as {file_name}"
     
+    def _covariance(arma, max_lag):
+        covariances = np.zeros(max_lag+1)
+        for k in range(max_lag+1):
+            if k > arma.q:
+                covariance = 0
+            else:
+                theta_padded = np.append(arma.theta, np.zeros(k))  # Pad theta with zeros for lag
+                covariance = arma.sigma**2 * np.sum(theta_padded[k:arma.q+k] * arma.theta[:arma.q])
+            
+            # Add the contribution from the AR part
+            if k <= arma.p:
+                phi_padded = np.append(arma.phi, np.zeros(k))  # Pad phi with zeros for lag
+                covariance += np.sum(phi_padded[k:arma.p+k] * arma.phi[:arma.p])
+            covariances[k] = covariance
+            print(f'共變異數(lag {k}):{covariances[k]:.4f}')
+            
+        
+        return covariances
 
+    
+####AR
 class AR(ARMA):
+        """
+        AR(p,phi, c, mu,sigma) process
+        p : AR 的階次   
+        phi : AR 的係數
+        c : 常數項
+        --------------------
+        常態分佈的進行抽樣生成隨機誤差  N(mu, sigma)
+        mu : 隨機誤差的平均值
+        sigma : 隨機誤差的標準差
+        ex: AR(1, [0.5], 0, 0, 1)
+        # AR(1) process 係數設定 phi=0.5, c=0, mu=0, sigma=1
+        """
         def __init__(self, p, phi, c, mu, sigma):
             super().__init__(p, 0, phi, [], c, mu, sigma)  # 調用父類的構造方法，MA部分設為空
         def simulate(self, num_samples=1):
             return self._simulate(num_samples)
         def statistics(self):
             return self._statistics()
+       
+        # def plot(self):
+        #     return self._plot()
+
         def plot(self):
-            return self._plot()
+            plt.style.use('ggplot')
+            plt.figure(figsize=(10, 4))
+            plt.plot(self.memory, marker='o')
+            plt.title(f"AR({self.p}) Process")
+            plt.xlabel("Period")
+            plt.ylabel("Value")
+            plt.show()
+            
         def save(self, file_name):
             return self._save(file_name)
+        def covariance(self,max_lag):
+            return self._covariance(max_lag)
+        
         
 
-
-
+###MA
 class MA(ARMA):
+    """
+    MA(q,theta, c, mu,sigma) process
+    q : MA 的階次
+    theta : MA 的係數
+    c : 常數項
+    --------------------
+    常態分佈的進行抽樣生成隨機誤差  N(mu, sigma)
+    mu : 隨機誤差的平均值
+    sigma : 隨機誤差的標準差
+    ex: MA(1, [0.5], 0, 0, 1)
+    # MA(1) process 係數設定 theta=0.5, c=0, mu=0, sigma=1
+    """
     def __init__(self, q, theta, mu, c,sigma):
         super().__init__(0, q, [], theta, c, mu, sigma)
     def simulate(self, num_samples=1):
         return self._simulate(num_samples)
     def statistics(self):
         return self._statistics()
+    
+    # def plot(self):
+    #     return self._plot()
+
     def plot(self):
-        return self._plot()
+        plt.style.use('ggplot')
+        plt.figure(figsize=(10, 4))
+        plt.plot(self.memory, marker='o')
+        plt.title(f"MA({self.q}) Process")
+        plt.xlabel("Period")
+        plt.ylabel("Value")
+        plt.show()
     def save(self, file_name):
         return self._save(file_name)
+    def covariance(self,max_lag):
+        return self._covariance(max_lag)
     
