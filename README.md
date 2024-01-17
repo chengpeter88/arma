@@ -6,7 +6,7 @@
 
 要安裝套件，請運行以下命令：
 ```
-pip install git+https://github.com/chengpeter88/arma@v1.0.3
+pip install git+https://github.com/chengpeter88/arma@v1.0.2
 ```
 
 ## 解除安裝方法
@@ -98,13 +98,20 @@ arma.save(file_name="*.txt")
 arma.save(file_name="*.xlsx")
 ```
 
-### 圖形plot()
+### 展示圖片
 以下展示為透過`arma.plot()` 實體後可以獲取的圖片：
-
 
 ![ARMA Model Data Plot](https://github.com/chengpeter88/arma/raw/master/arma_demo.png)
 
 
+以下展示為透過`arma.save(file_name="*.csv")` 實體後可以獲取return：
+
+![ARMA Model Data save](https://github.com/chengpeter88/arma/raw/master/retun_file.png)
 
 
+- Notice : 使用`AR` `MA` 子類繼承於父類`ARMA`因此可使用相同的instance  method   
+-----
+## Goal
+- 計量經濟學中時間序列議題，透過OOP設計`ARMA`、`MA`、`AR` 模型，可輔助驗證計量理論
+- 人工資料生成，可用於現今資料科學中模型評估資料選擇，建構`ARMA` `AR` `MA`時間序列特性資料
 
