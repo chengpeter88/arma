@@ -97,6 +97,12 @@ arma.save(file_name="*.csv")
 arma.save(file_name="*.txt")
 arma.save(file_name="*.xlsx")
 ```
+### 共變異數矩陣(lag)
+```python
+# 使用者可以填入落後項，必須為整數
+arma.covariance(int)
+arma.covariance(2)
+```
 
 ### 展示圖片
 以下展示為透過`arma.plot()` 實體後可以獲取的圖片：
