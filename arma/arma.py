@@ -51,7 +51,7 @@ class ARMA:
 
 
 
-    ##priveate function 
+    ##private function 
     def _simulate(self, num_samples):
         X = np.zeros(num_samples)
         for t in range(num_samples):
@@ -109,7 +109,6 @@ class ARMA:
             covariances[k] = covariance
             print(f'共變異數(lag {k}):{covariances[k]:.4f}')
             
-        
         return covariances
 
     
